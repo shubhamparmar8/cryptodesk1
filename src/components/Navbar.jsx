@@ -84,20 +84,19 @@ const Navbar = () => {
           ml: { sm: `${drawerWidth}px` },
         }}
       >
-        <Toolbar>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Box display="flex" alignItems="center">
           <img src={icon} alt="crypto desk" width="50px" height="50px" />
           <Link to="/">
             <Typography
               variant="h6"
-              noWrap
-              component="div"
-              color="primary"
-              ml="1rem"
-              sx={{ flexGrow: 1 }}
+              color="primary" 
+              sx={{ ml: "0.9rem" }}>
             >
               CryptoDesk
             </Typography>
-          </Link>
+            </Link>
+          </Box>
           <IconButton
             color="inherit"
             aria-label="open drawer"
